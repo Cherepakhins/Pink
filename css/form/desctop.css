@@ -1,0 +1,169 @@
+@media(min-width: 1200px) {
+    fieldset{
+        border: 2px solid #E5E5E5;
+        border-radius: 1px;
+        z-index: 1;
+    }
+
+    legend{
+        padding: 0 30px;
+    }
+
+    .header__title{
+        max-width: 760px; 
+    } 
+
+    .catalog-promo{
+        width: 760px;
+    }
+
+    /* name */
+
+    .name__list {
+        width: 420px;
+        row-gap: 56px;
+    }
+
+    .name__item {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    .name__item > span{
+        margin-left: 0;
+    }
+
+    .wrapper-sections{
+        width: 940px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 74px;
+        row-gap: 64px;
+    }
+
+    .devices {
+        order: 1;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        row-gap: 38px;
+
+    }
+
+    .devices > fieldset{
+        width: 430px;
+        margin: 0;
+    }
+
+    .devices__title{
+        width: 388px;
+    }
+
+    /* contacts */
+
+    .contacts {
+        order: 2;
+        width: 940px;
+    }
+    .contacts__title{
+        width: 260px;
+        margin: 0 auto;
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: #D22856;
+    }
+    .contacts__list {
+        width: 940px;
+        margin: 0;
+        padding: 44px 0 22px;
+        flex-direction: row;
+    }
+    
+    .contacts__item {
+        width: 370px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    input[type=tel]{
+        width: 370px;
+        background-position: 95% center ;
+        background-repeat: no-repeat;
+        background-image: url(../../img/tablet/phone.svg);
+    }
+
+    input[type=email]{
+        width: 370px;
+        background-position: 95% center ;
+        background-repeat: no-repeat;
+        background-image: url(../../img/tablet/mail.svg);
+    }
+
+    /* achievements */
+
+    .achievements {
+        order: 3;
+        width: 940px;
+        margin: 0 auto;
+        order: 3;
+        background: #fff;
+    }
+
+    .achievements__title{
+        width: 450px;
+    }
+
+    .achievements__list {
+        width: 840px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .achievements__item {
+        width: 280px;
+    }
+
+     /* comment */
+
+     .comment > fieldset{
+        width: 940px;
+        margin: 0 auto;
+        padding: 44px 60px;
+    }
+
+    .comment__title {
+        width: 260px;
+    }
+
+    .comment__input{
+        margin: 0 auto;
+        width: 820px;
+    }
+
+    /* form btn */
+
+    .form-btn {
+        width: 940px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* modal */
+
+    .modal {
+        width: 780px;
+    }
+
+    .wrapper-text{
+        padding: 44px 201px 41px;
+    }
+}

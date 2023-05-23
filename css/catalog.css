@@ -1,0 +1,5 @@
+@import url(./index.css);
+
+@import url(./catalog/mobile.css);
+@import url(./catalog/tablet.css);
+@import url(./catalog/desctop.css);

@@ -1,0 +1,132 @@
+@media(min-width: 660px) and (max-width: 1199px){
+    .header{
+        height: 440px;
+        background-position: top ;
+    }
+
+    .header__title{
+        margin: 0 auto;
+        padding: 0;
+        font-size: 50px;
+        line-height: 68px;
+    }
+
+    .catalog-promo{
+        width: 620px;
+        padding: 0 30px;
+        margin: 100px auto 85px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    /* photos */ 
+
+
+    .photos__list{
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        justify-content: center;
+    }
+    .photos__baner {
+        bottom: 12%;
+        left: 70%;
+    }
+
+    .wrapper-comment--top{
+        position: relative;
+        width: 620px;
+        padding: 30px 30px 5px 30px;
+    }
+    .line-second{
+        position: absolute;
+        right: 30px;
+    }
+    .photos__img {
+        width: 300px;
+        height: 300px;
+    }
+    .photos__img--top{
+        width: 100%;
+        height: 509px;
+    }
+
+    .wrapper-comment {
+        width: 300px;
+        height: 155px;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .photos__comment{
+        margin: 0; 
+    }
+    
+    /* editor-photo */
+
+    .editor-photo {
+        padding: 54px 0 57px;
+    }
+
+    .editor-photo__wrapper{
+        max-width: 620px;
+        margin: 0 auto;
+        flex-direction: row;
+        column-gap: 49px;
+    }
+
+    .editor-photo__img{
+        width: 300px;
+        height: 400px;
+        margin: 0;
+    }
+
+    .editor-photo__img--tab{
+        height: 300px;
+        margin: 0;
+    }
+    .wrapper-filters{
+        display: flex;
+
+    }
+
+    .editor-photo__filters{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .editor-photo__filter{
+        width: 22px;
+        height: 22px;
+        opacity: 1;
+        fill: #D22856;
+        margin-bottom: 10px;
+    }
+
+    .editor-photo__inputs {
+        display: flex;
+        flex-direction: column;
+        row-gap: 49px;
+        margin-left: 20px;
+    }
+    
+    .editor-photo__input{
+        display: block;
+        height: 30px;
+    }
+
+    .editor-photo__input--active {
+        width: 100%;
+        border: none;
+    }
+
+    .editor-photo__btns {
+        align-items: flex-start;
+        margin-top: 67px;
+        row-gap: 24px;
+    }
+}

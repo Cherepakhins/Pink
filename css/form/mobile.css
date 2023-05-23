@@ -1,0 +1,521 @@
+/* main */
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-promo{
+    order: 0;
+    margin-bottom: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 44px;
+}
+
+fieldset{
+   margin: 42px 0 0 0;
+}
+
+.wrapper-sections{
+    display: flex;
+    flex-direction: column;
+    row-gap: 42px;
+}
+
+/* name */
+
+.name {
+    order: 1;
+}
+
+.name__list {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+}
+
+.name__item > span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    align-items: center;
+    color: #D22856;
+    margin-left: 20px; 
+}
+
+input[type=text]{
+    margin-top: 100x;
+    padding: 23px 0 23px 20px;
+    width: 100%;
+    height: 59px;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+}
+
+input[type=text]:active{
+    border: 2px solid #D22856;
+
+}
+
+input[type=text]:hover{
+    border: 2px solid #283645;
+}
+
+input[type=text]::placeholder{
+    color: #283645;
+}
+
+/* achievements */
+
+.achievements {
+    order: 2;
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 44px;
+}
+
+.achievements__title {
+    width: 218px;
+    margin: 0 auto;
+    margin-top: 42px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D22856;
+}
+
+.achievements__list {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 47px;
+    padding: 44px 0;
+}
+
+.achievements__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 22px;
+}
+
+/* скрываем оригинальные radio и checkbox */
+
+input[type=radio] {
+	display: none;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+/* делаем label кликабельным и задаем позицию */
+
+label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+    font-family: 'Open Sans';
+	padding-left: 60px;
+	margin-right: 15px;
+	font-size: 18px;
+    line-height: 30px; 
+    color: #283645; 
+}
+
+/* с помощью псевдоэлементов создаем место для галочки или кружочка  */
+
+label:before {
+	content: "";
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+}
+input[type=radio] + label:before {
+
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px;
+    border-radius: 50%;
+}
+
+/* добавляем точку в середине если radio отмечена */
+
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #D22856;
+    font-size: 44px;
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
+    border-radius: 50%;
+}
+
+/* добавляем галочку если чекбокс отмечен */
+
+input[type=checkbox]:checked + label:before {
+	content: "\2714";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	
+	color: #D22856;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+input[type=radio]:disabled + label  {
+    opacity: 0.3;
+}
+
+input[type=checkbox]:disabled + label  {
+    opacity: 0.3;
+}
+
+input[type=radio]:not(:disabled):not(:checked)+label:hover::before  {
+	content: "\2022";
+    color: #D22856;
+    font-size: 44px;
+    display: flex;
+    justify-content: center;
+    line-height: 25px;
+    border: 2px solid #283645;
+}
+
+input[type=checkbox]:not(:disabled):not(:checked)+label:hover::before  {
+	content: "\2714";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 21px;
+	color: #D22856;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #283645;
+}
+
+input[type=radio]:not(:disabled):not(:checked)+label:active::before  {
+    border: 2px solid #D22856;
+}
+
+input[type=checkbox]:not(:disabled):not(:checked)+label:active::before  {
+    border: 2px solid #D22856;
+}
+
+/* contacts */
+
+.contacts {
+    order: 3;
+    padding: 0;
+}
+
+.contacts > fieldset{
+    margin: 0;
+}
+
+.contacts__title{
+    display: none;
+}
+
+.contacts__list {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+}
+
+.contacts__item {
+    width: 100%;
+    align-items: flex-start;
+}
+
+.contacts__item > span{
+    margin: 0 0 5px 17px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #D22856;
+}
+
+input[type=tel]{
+    padding: 23px 0 23px 20px;
+    width: 100%;
+    height: 59px;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+}
+
+input[type=tel]:hover{
+    border: 2px solid #283645;
+
+}
+
+input[type=tel]:active{
+    border: 2px solid #D22856;
+
+}
+
+input[type=tel]::placeholder{
+    color: #283645;
+}
+
+input[type=email]{
+    padding: 23px 0 23px 20px;
+    width: 100%;
+    height: 59px;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+}
+
+input[type=email]:hover{
+    border: 2px solid #283645;
+
+}
+
+input[type=email]:active{
+    border: 2px solid #D22856;
+
+}
+
+input[type=email]::placeholder{
+    color: #283645;
+}
+
+/* devices */
+
+.devices {
+    order: 4;
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+}
+
+.devices__title {
+    width: 218px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D22856;
+    
+}
+
+.devices__list {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 47px;
+    padding-top: 40px;
+    padding-bottom: 44px;
+}
+
+.devices__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 22px;
+}
+
+/* comment */
+
+.comment {
+    order: 5;
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+    margin: 0 auto;
+}
+
+.comment > fieldset{
+    margin: 0;
+}
+
+.comment__title {
+    width: 218px;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D22856;
+}
+
+.comment__input{
+    margin: 0 auto;
+    width: 276px;
+    min-height: 197px;
+    padding: 22px 25px 0 20px;
+    border: 2px solid #E5E5E5;
+    border-radius: 1px;
+    margin-top: 42px;
+}
+
+.comment__input::placeholder{
+    color: #283645;
+}
+
+/* form btn */
+
+.form-btn {
+    order: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 46px;
+}
+
+.form__btn {
+    width: 276px;
+    height: 59px;
+    background: #2AAB6D;
+    border: 2px solid #2AAB6D;
+    border-radius: 1px;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.form__btn:hover{
+    background: #1C9B5E;
+}
+
+.form__btn:active{
+    opacity: 0.3;
+}
+
+.form__btn:disabled{
+    background: #E5E5E5;
+    border: 2px solid #E5E5E5;
+}
+
+.form__text {
+    display: flex;
+    column-gap: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.form__text > p{
+    color: #D22856;
+}
+
+/* modal */
+
+.modal {
+    z-index: 25;
+    position: fixed;
+    
+    bottom: 100px;
+    right: 0;
+    left: 0;
+    display: none;
+    width: 320px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.wrapper-text{
+    padding: 44px 27px 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 37px;
+}
+
+.modal__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;   
+}
+
+.modal__text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #283645;
+}
+
+.wrapper-btn{ 
+    display: flex;
+    justify-content: center;
+    padding: 52px 22px;
+    background: #F2F2F2;
+    border-radius: 0px 0px 1px 1px;
+}
+
+.modal__btn{
+    width: 276px;
+    
+    height: 59px;
+    background: #2AAB6D;
+    border: 2px solid #2AAB6D;
+    border-radius: 1px; 
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.modal__btn:hover{
+    background: #1C9B5E;
+}
+
+.modal__btn:active{
+    opacity: 0.3;
+}
+
+.modal--succesful{
+    display: block;
+}
